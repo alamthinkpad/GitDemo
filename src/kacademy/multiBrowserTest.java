@@ -19,6 +19,7 @@ public class multiBrowserTest {
 		WebDriver driver = new RemoteWebDriver(new URL("https://automate.browserstack.com/dashboard/v2/quick-start/get-started"), caps);
 		driver.get("https://www.youtube.com/");
 		Assert.assertTrue(driver.getTitle().matches("YouTube"));
+		System.out.println(driver.getTitle());
 		
 	}
 
